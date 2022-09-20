@@ -1,25 +1,18 @@
-body {
-    background-color: white;
-}
-
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 400px;
     color: blueviolet;
     margin-bottom: 10px;
 }
 
-h2 {
+/* h2 {
     font-size: 80px;
     margin-bottom: 10px;
-}
+} */
 
 .container {
     width: 200px;
@@ -43,5 +36,21 @@ h2 {
 
 .hidden {
     display: none;
-    
+}
+
+.button {
+    font-size: 60px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color:#002ead;
+    transition: ;
 }
