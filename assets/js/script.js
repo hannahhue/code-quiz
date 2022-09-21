@@ -1,6 +1,6 @@
 //assign vars
 var timerEl = document.querySelector("countdown");
-var startButton = document.querySelector("#start");
+var startButton = document.querySelector("#start-btn");
 var secondsLeft = 50;
 var score = 0;
 var nameInput = document.querySelector("#user-input");
@@ -30,6 +30,7 @@ var questions = [
     }
 ];
 
+//starts program, starts timer and generates questions
 function startProgram() {
     timerStart()
     generateQuestions()
@@ -47,11 +48,7 @@ function startProgram() {
     alert("you got " + score + "/" + questions.length);
 };
 
-//  startButton.addEventListener("click", function()) {
-//     timerStart();
-//     generateQuestions();
-//  };
-
+//timer starts
  function timerStart() {
       timerEl.textContent = secondsLeft + " Seconds Left.";
       if (timeLeft > 1) {
@@ -67,8 +64,15 @@ function startProgram() {
     timerEl.textContent = "Times Up!";
 };
 
+// subtracting 5 seconds when an answer is incorect
 function subtractSec() {
     secondsLeft = secondsLeft -5 
 };
 
+//storing local storage for the highscore board
 localStorage.setItem('name',nameS)
+
+//button function
+startButton.addEventListener('click', function () {
+    alert('Hello World');
+  });

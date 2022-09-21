@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    min-width: 200px;
 }
 
 h1 {
-    font-size: 400px;
+    font-size: 200px;
     color: blueviolet;
     margin-bottom: 10px;
 }
@@ -15,28 +16,20 @@ h1 {
 } */
 
 .container {
+    display: block;
     width: 200px;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 100px;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
+    margin-top: 40px;
 }
 
 .hidden {
     display: none;
-}
+} 
 
 .button {
     font-size: 60px;
@@ -52,5 +45,4 @@ h1 {
 
 .button:hover {
     background-color:#002ead;
-    transition: ;
 }
