@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Quiz</title>
@@ -14,42 +16,35 @@
             <h1>Coding Quiz</h1>
            <button id="start-btn" class="btn">Start</button>
     </section>
+
     <main class="game">
-        <div id="timer">
-            <p>Time: </p>
+        <div>
+            <p id="timer">Time: </p>
         </div>
+
         <div id="question">
             <h2>Question: </h2>
         </div>
+
         <div id="multiple-choice" class="questionLine">
-            <div>
-                <label id="a"></label>
-              </div><hr>
-    
-              <div>
-                <label id="b"></label>
-              </div><hr>
-    
-              <div>
-                <label id="c"></label>
-              </div><hr>
-    
-              <div>
-                <label  id="d"></label>            
-              </div>
         </div>
+
         <aside class="inputInfo">
             <div id=scoreInput>
                 <h3 id="score">Score: </h3>
             </div>
+
             <form>
                 <label for="initialsBox">Enter Your Initials Here:</label><br>
                 <input id="initialsBox" type="text">
-                <input id="submitBtn" type="submit" class="btn">
+                <input id="sub-btn" type="submit" class="btn">
             </form>
-        </aside>
+        </aside>+-
     </main>
-    <script type="text/javascript" src="script.js"></script>
+
+    <!-- added script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 
