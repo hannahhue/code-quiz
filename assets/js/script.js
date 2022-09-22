@@ -8,7 +8,7 @@ var scoreB = document.getElementById("scorebox");
 
 var secondsLeft = 50;
 var score = 0;
-var nameS = nameInput.value;
+// var nameS = nameInput.value;
 var questionNum = 0;
 
 scoreB.style.visibility = 'hidden';
@@ -44,9 +44,9 @@ var questions = [
 
 //starts program, starts timer and generates questions
 function startProgram(event) {
-    event.preventDefault()
-    timerCount()
-    generateQuestions()
+    event.preventDefault();
+    timerCount();
+    generateQuestions();
     startButton.style.visibility = 'hidden';
 };
 
@@ -58,12 +58,12 @@ function generateQuestions() {
         var choice = document.createElement("button");
         choice.textContent = Object.values(questions[questionNum])[1][i];
         questionChoice.appendChild(choice);
-    }
+    };
 };
 
 //checks response from question
 function checkAnswer(event, answer) {
-    var answer = event.target
+    var answer = event.target;
     var result = false;
     //if right and more questions will move on to next q
     if (questionNum < questions.length) {
@@ -71,13 +71,13 @@ function checkAnswer(event, answer) {
     };
     //if wrong and is less than # of qs will remove time and go next
     if (answer.textContent !== questionAnswer) {
-        secondsLeft = secondsLeft -5
+        secondsLeft = secondsLeft -5;
         questionNum++;
         if (questionNum === questions.length) {
             endGame(score, timerEl, result);
         } else {
             nextQuestion(questionNum, result);
-        }
+        };
     //ends game if all questions / max length reached
     } else {
         score++;
@@ -87,16 +87,16 @@ function checkAnswer(event, answer) {
             endGame(score, timerEl, result);
         } else {
             nextQuestion(questionNum, result);
-        }
+        };
     };
-}
+};
 
 //called by check is question # is less than the length will execute
 function nextQuestion(questionNum, result) {
     if (questionNum < questions.length) {
-        questionC.textContent = Object.values(questions[questionNum])[0];
+        questionChoice.textContent = Object.values(questions[questionNum])[0];
         var resultText = document.createElement("p");
-        questionC.appendChild(resultText);
+        questionChoice.appendChild(resultText);
         if (result) {
             resultText.textContent = "Correct!";
         } else {
@@ -105,15 +105,16 @@ function nextQuestion(questionNum, result) {
         for (i = 0; i < questions[questionNum].choices.length; i++) {
             var choice = document.createElement("button");
             choice.textContent = Object.values(questions[questionNum])[1][i];
-            questionC.appendChild(choice);
-        }
+            questionChoice.appendChild(choice);
+        };
     };
-}
+};
 
+//HELP HERE
 //called after all questions are complete
 function endGame(score, timer, result) {
-    var submitButton = document.querySelector("#sub-btn");
-    var nameInput = document.querySelector("#user-input");
+    // var submitButton = document.querySelector("#sub-btn");
+    // var nameInput = document.querySelector("#user-input");
     var scoreSaver = document.createElement("input");
     var finalScore = timer+score
     var resultText = document.createElement("p");
@@ -144,10 +145,10 @@ var timerCount = setInterval (function() {
 startButton.addEventListener('click ', startProgram);
 
 //next question/check button
-questionC.addEventListener("click", checkAnswer);
+questionChoice.addEventListener("click", checkAnswer);
 
 //HELP HERE
 //save initals button
-submitButton.addEventListener('click', function (event) {
-     localStorage.setItem('name',nameS);
-});
+// submitButton.addEventListener('click', function (event) {
+//      localStorage.setItem('name',nameS);
+// });

@@ -1,20 +1,52 @@
-/* * {
+* {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    font-size: 200px;
+    display: block;
+    font-size: 100px;
     color: blueviolet;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
-/* h2 {
-    font-size: 80px;
+h3 {
+    font-size: 50px;
     margin-bottom: 10px;
-} */
+}
 
-/* .container {
+#scorebox {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.game {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+    border: solid black;
+}
+
+.start-btn {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.container {
     display: block;
     width: 200px;
     height: 300px;
@@ -29,19 +61,3 @@ h1 {
 .hidden {
     display: none;
 } 
-
-.button {
-    font-size: 60px;
-    padding: 20px;
-    width: 100px;
-    text-align: center;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-    background-color: blueviolet;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color:#002ead; 
-} */

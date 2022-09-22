@@ -6,33 +6,29 @@ https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
 
 ## Description
 
-a timed coding quiz
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+This webpage is used to test our coding knowledge, although short and sweet can be super effective. My motivation for this challenge was to input my understanding of functions and implement it not only in the scxript but to then call and connect it into the HTML as well. It solves local storage usage and basic calling from different functions into another. It also gives your brain a nice sense of accomplishment once completed. I learned that connecting the JS into the HTML to get it to show what i want when i want was more challenging than I expected. Although i struggled (and restared) a lot durring this project, im still proud of my product even though it has flaws. I hope to return to this project one day and expand on it and make it more functional.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+There is no installation required for this webpage, all you need to do is follow the link!
+
+[link here]
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+When you load up the page you should be greated with a title and start button
 
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![alt text](assets/images/screenshot.png)
+
+Once you click start
+
+![alt text](assets/images/screenshot.png)
+
+you should be promted to answer a series of questions.
+
+![alt text](assets/images/screenshot.png)
+
+Once the questions are completed you should be greeted with your time score and a place to submit your name!
 
 ![alt text](assets/images/screenshot.png)
 
