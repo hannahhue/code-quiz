@@ -115,6 +115,7 @@ function nextQuestion(questionNum, result) {
 function endGame(score, timer, result) {
     // var submitButton = document.querySelector("#sub-btn");
     // var nameInput = document.querySelector("#user-input");
+    scoreB.style.visibility = 'show';
     var scoreSaver = document.createElement("input");
     var finalScore = timer+score
     var resultText = document.createElement("p");
@@ -132,7 +133,8 @@ function endGame(score, timer, result) {
 };
 
 //timer starts
-var timerCount = setInterval (function() {
+var timerCount = setInterval (function(event) {
+    event.preventDefault();
     secondsLeft--;
     timerEl.textContent = `Timer: ${secondsLeft}`
     if (secondsLeft === 0 ){
@@ -148,7 +150,7 @@ startButton.addEventListener('click ', startProgram);
 questionChoice.addEventListener("click", checkAnswer);
 
 //HELP HERE
-//save initals button
-// submitButton.addEventListener('click', function (event) {
-//      localStorage.setItem('name',nameS);
-// });
+// //save initals button
+submitButton.addEventListener('click', function (event) {
+     localStorage.setItem('name',nameS);
+});

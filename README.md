@@ -12,7 +12,7 @@ This webpage is used to test our coding knowledge, although short and sweet can 
 
 There is no installation required for this webpage, all you need to do is follow the link!
 
-[link here]
+https://hannahhue.github.io/code-quiz/
 
 ## Usage
 
