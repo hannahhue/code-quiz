@@ -7,6 +7,7 @@ var scoreB = document.getElementById("scorebox");
 var secondsLeft = 0;
 var score = 0;
 
+//timer count down start
 var timerCount = setInterval(function (event) {
   if (secondsLeft > 0) {
     timerEl.textContent = secondsLeft;
@@ -124,12 +125,11 @@ function nextQuestion(questionNum, result) {
 
 //called after all questions are complete
 function endGame(result) {
-  // var submitButton = document.querySelector("#sub-btn");
-  // var nameInput = document.querySelector("#user-input");
   var scoreSaver = document.createElement("input");
   var scoreButton = document.createElement("button");
   var finalScore = secondsLeft + score;
   var resultText = document.createElement("p");
+  //creating creating buttons and save local storage functions
   scoreButton.textContent = "Submit";
   scoreSaver.type = "text";
   startButton.style.visibility = "visible";
@@ -138,6 +138,7 @@ function endGame(result) {
   questionChoice.appendChild(resultText);
   questionChoice.appendChild(scoreSaver);
   questionChoice.appendChild(scoreButton);
+  //responce after answer
   if (result) {
     resultText.textContent = "Correct!";
   } else {

@@ -18,19 +18,19 @@ https://hannahhue.github.io/code-quiz/
 
 When you load up the page you should be greated with a title and start button
 
-![alt text](assets/images/screenshot.png)
+![Loaded](/assets/imgs/img1.PNG)
 
 Once you click start
 
-![alt text](assets/images/screenshot.png)
+![Once started](assets/imgs/img2.PNG)
 
 you should be promted to answer a series of questions.
 
-![alt text](assets/images/screenshot.png)
+![Question start](assets/imgs/img3.PNG)
 
 Once the questions are completed you should be greeted with your time score and a place to submit your name!
 
-![alt text](assets/images/screenshot.png)
+![score and sub](assets/imgs/img4.PNG)
 
 ## Credits
 
